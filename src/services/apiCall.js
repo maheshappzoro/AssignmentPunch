@@ -29,19 +29,6 @@ export default async (method) => {
     }
 }
 
-let headers = new Headers({
-    //'deviceInfo': '',
-    'token': global[DEVICE_TOKEN], //'d83l_NVs98o:APA91bF12ZZGxbJ9yxrGbgV1nVL7ZUjy5t9QPVtXzD3_e8nYmJ00fguiFCn47bl6p51wqoGvXEc1JIqqTlNs2IcQG0M2phJCWAxF8LO4nFaOM1wFrIozEjtkSYqA2zhbKoXyq-_Sos1H',
-    'userToken': global[USER_TOKEN], // '2e078fa4d7de3ae92bfc0be849cc4d5b',
-    'deviceId': global[DEVICE_ID],
-    'Content-Type': 'multipart/form-data',
-    //'boundary': '9ce37efc-88ba-484f-b8eb-b312d3895c00'
-})
-
-console.log('================HEADER====================');
-console.log(headers);
-console.log('===============HEADER=====================');
-
 
 export async function getApiCall(url) {
     console.warn('url :::: ', url)
@@ -90,18 +77,8 @@ async function getPostApiCall(method) {
         }
         let response = await fetch(method.type, {
             method: 'POST',
-            // headers: {
-            //     'Accept': 'application/json',
-            //     'Content-Type': 'multipart/form-data'
-            // },
-            //headers: headers,
             headers: {
-                //'deviceInfo': '',
-                'token': global[DEVICE_TOKEN], //'d83l_NVs98o:APA91bF12ZZGxbJ9yxrGbgV1nVL7ZUjy5t9QPVtXzD3_e8nYmJ00fguiFCn47bl6p51wqoGvXEc1JIqqTlNs2IcQG0M2phJCWAxF8LO4nFaOM1wFrIozEjtkSYqA2zhbKoXyq-_Sos1H',
-                'userToken': global[USER_TOKEN], // '2e078fa4d7de3ae92bfc0be849cc4d5b',
-                'deviceId': global[DEVICE_ID],
-                'Content-Type': 'multipart/form-data',
-                //'boundary': '9ce37efc-88ba-484f-b8eb-b312d3895c00'
+               
             },
             body: formData
         })

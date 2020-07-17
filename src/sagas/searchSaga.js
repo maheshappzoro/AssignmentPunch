@@ -9,11 +9,11 @@ export function* searchAction(action) {
        
         action.search=action.payload.search
         delete action.payload
-       // console.warn("action=====",action);
+       // console.warn("action==searchAction========",action);
        
         
         const data = yield callApis(action)
-        console.warn("data======",data);
+       // console.warn("data======",data);
         
         yield put({ type: Utils.ApiTypes.API_SEARCH_SUCCESS, payload: data })
     } catch (e) {

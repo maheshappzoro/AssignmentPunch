@@ -3,6 +3,7 @@ import AsyncStorage from "@react-native-community/async-storage";
 import * as Utils from "./index"
 
 export const USER_DATA = Utils.Constants.KEY_USER_DATA;
+export const SAVED_SEARCH = "SAVED_SEARCH";
 export const TIME_OUT_TIME = 'TIME_OUT_TIME';
 
 export const setUserData = (data) => {

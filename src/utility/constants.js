@@ -5,6 +5,7 @@ export const BOTH_TEAM_RADIUS = 4;
 export const INPUT_FIELD_BORDER_RADIUS = 30;
 export const SCREEN_GALLARY = "SCREEN_GALLARY";
 export const SCREEN_HOC_CALLER = "SCREEN_HOC_CALLER";
+export const SCREEN_ANGLE_PAGE = "SCREEN_ANGLE_PAGE";
 export const KEY_WELCOME = "KEY_WELCOME";
 export const KEY_APP = "KEY_APP";
 
